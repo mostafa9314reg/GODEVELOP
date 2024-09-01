@@ -1,3 +1,4 @@
+// Variables Asignment checking
 package main
 
 import (
@@ -18,4 +19,17 @@ func main() {
 	var x int
 	var str string
 	fmt.Println("Default value int is:", x, "Default value string is:", str)
+
+	str1, str2 := "String1", "String2"
+	str3, str2 := "String3", "String2"
+	fmt.Println(str1, str2, str3)
+
+	var (
+		y     = 7
+		z int = 9
+	)
+	fmt.Println("sum of y+z is :", y+z)
+
+	word1, word2, _ := "Hello", "World", "Mostafa"
+	fmt.Println(word1, word2)
 }
