@@ -14,5 +14,8 @@ func main() {
 	var d int = 4
 	result := a + b + c + d + e
 	fmt.Println("The result of add is  :", result)
-	
+
+	var x int
+	var str string
+	fmt.Println("Default value int is:", x, "Default value string is:", str)
 }
