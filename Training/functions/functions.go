@@ -56,5 +56,4 @@ func main() {
 	fmt.Println("two number returned are :", a, b)
 	d := random()
 	fmt.Println("result of adding three numbers od three difrent functionis  :", add(a, b, d))
-
 }
