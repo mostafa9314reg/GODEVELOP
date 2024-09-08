@@ -46,26 +46,40 @@ func rollCount(roll int, side int) int {
 	return summRollResult
 }
 
-func diceCount(roll int, side int, count int) {
+func diceCount(roll int, side int, count int) int {
 	sumOfDices := 0
 	for i := 1; i <= count; i++ {
 		sumOfDices = sumOfDices + rollCount(roll, side)
 	}
 	fmt.Println("sum of all dices rolls is :", sumOfDices)
+	return sumOfDices
 }
 func main() {
 	roll := 2
-	side := 3
-	dice := 3
-	if roll == 2 && dice == 2 {
+	side := 2
+	dice := 1
+	//if roll == 2 && dice == 2 {
+	//	fmt.Println("Snake eyes")
+	//} else if roll == 7 {
+	//	fmt.Println("Lucky 7")
+	//} else if roll%2 == 0 {
+	//	fmt.Println("Even")
+	//} else {
+	//	fmt.Println("Odd")
+	//}
+	rolled := diceCount(roll, side, dice)
+	switch rolled := rolled; {
+	case rolled == 2 && dice == 2:
+
 		fmt.Println("Snake eyes")
-	} else if roll == 7 {
+	case rolled == 7:
+
 		fmt.Println("Lucky 7")
-	} else if roll%2 == 0 {
+	case rolled%2 == 0:
 		fmt.Println("Even")
-	} else {
+	default:
 		fmt.Println("Odd")
+
 	}
-	diceCount(roll, side, dice)
 
 }
