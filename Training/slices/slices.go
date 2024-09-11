@@ -28,14 +28,18 @@ func assemblPrint(line []Part) {
 }
 
 func main() {
-	line := []Part{
-		"Wheel",
-		"Dore",
-		"Window",
-	}
+	//line := []Part{
+	//	"Wheel",
+	//	"Dore",
+	//	"Window",
+	//}
+	line := make([]Part, 3)
+	line[0] = "Wheel"
+	line[1] = "Dor"
+	line[2] = "Window"
 	assemblPrint(line)
 	line = append(line, "Gearbox", "Engine")
 	assemblPrint(line)
-	lastParts := line[3:5]
+	lastParts := line[3:]
 	fmt.Println("Last 2 parts are :", lastParts)
 }
