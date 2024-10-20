@@ -55,11 +55,11 @@ func displayServerStatus(mymap map[string]string) {
 func main() {
 	//servers := []string{"darkstar", "aiur", "omicron", "w359", "baseline"}
 	mymap := make(map[string]string)
-	mymap["darkstar"] = "Online"
-	mymap["aiur"] = "Online"
-	mymap["omicron"] = "Online"
-	mymap["w359"] = "Online"
-	mymap["baseline"] = "Online"
+	mymap["darkstar"] = "Maintenance"
+	mymap["aiur"] = "Maintenance"
+	mymap["omicron"] = "Maintenance"
+	mymap["w359"] = "Maintenance"
+	mymap["baseline"] = "Maintenance"
 	displayServerStatus(mymap)
 
 }
