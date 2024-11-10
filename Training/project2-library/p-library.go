@@ -137,7 +137,7 @@ func main() {
 		total:  2,
 		lended: 0,
 	}
-	library.books["Go Bootcamp"] = BookEntry{
+	library.books["Go Bootcamp  "] = BookEntry{
 		total:  1,
 		lended: 0,
 	}
