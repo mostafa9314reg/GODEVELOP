@@ -12,21 +12,20 @@
 //--Notes:
 //* Your program is complete when it compiles and prints the correct results
 
-
 package main
 
 import "fmt"
 
 const (
-	Add  = iota
-	Sub  = iota
-	Mul  = iota
-	Div  = iota
+	Add = iota
+	Sub = iota
+	Mul = iota
+	Div = iota
+)
 
-	)
 type oparation int
 
-func (op oparation)calculate(lhs , rhs float64) float64  {
+func (op oparation) calculate(lhs, rhs float64) float64 {
 	switch op {
 	case Add:
 		return lhs + rhs
@@ -43,14 +42,18 @@ func (op oparation)calculate(lhs , rhs float64) float64  {
 
 }
 
-Op := op
-
-
-
-
 func main() {
 
+	add := oparation(Add)
+	fmt.Println(add.calculate(2, 2)) // = 4
 
+	sub := oparation(Sub)
+	fmt.Println(sub.calculate(10, 3)) // = 7
 
+	mul := oparation(Mul)
+	fmt.Println(mul.calculate(3, 3)) // = 9
+
+	div := oparation(Div)
+	fmt.Println(div.calculate(100, 2)) // = 50
 
 }
