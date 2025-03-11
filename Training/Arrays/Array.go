@@ -13,6 +13,7 @@
 //  - The total cost of the items
 //* Add a fourth product to the list and print out the
 //  information again
+// All about Arrays
 
 package main
 
